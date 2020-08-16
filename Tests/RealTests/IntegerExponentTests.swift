@@ -77,8 +77,7 @@ internal extension Real where Self: FixedWidthFloatingPoint {
 }
 
 #if swift(>=5.3)
-@available(iOS 14.0, watchOS 14.0, tvOS 7.0, *)
-@available(macOS, unavailable)
+@available(macOS 11.0, macCatalyst 11.0, iOS 14.0, tvOS 14.0, watchOS 7.0, *)
 extension Float16 {
   static func testIntegerExponent() {
     testIntegerExponentCommon()
@@ -175,9 +174,7 @@ extension Double {
 final class IntegerExponentTests: XCTestCase {
 
   #if swift(>=5.3)
-  @available(iOS 14.0, watchOS 14.0, tvOS 7.0, *)
-  @available(macOS, unavailable)
-  @available(macCatalyst, unavailable)
+  @available(macOS 11.0, macCatalyst 11.0, iOS 14.0, tvOS 14.0, watchOS 7.0, *)
   func testFloat16() {
     Float16.testIntegerExponent()
   }

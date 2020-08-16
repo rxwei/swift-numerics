@@ -87,9 +87,7 @@ where Exponent: FixedWidthInteger,
       RawSignificand: FixedWidthInteger { }
 
 #if swift(>=5.3)
-@available(iOS 14.0, watchOS 14.0, tvOS 7.0, *)
-@available(macOS, unavailable)
-@available(macCatalyst, unavailable)
+@available(macOS 11.0, macCatalyst 11.0, iOS 14.0, tvOS 14.0, watchOS 7.0, *)
 extension Float16: FixedWidthFloatingPoint { }
 #endif
 

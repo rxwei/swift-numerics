@@ -12,9 +12,7 @@
 #if swift(>=5.3)
 import _NumericsShims
 
-@available(iOS 14.0, tvOS 14.0, watchOS 7.0, *)
-@available(macOS, unavailable)
-@available(macCatalyst, unavailable)
+@available(macOS 11.0, macCatalyst 11.0, iOS 14.0, tvOS 14.0, watchOS 7.0, *)
 extension Float16: Real {
   @_transparent
   public static func cos(_ x: Float16) -> Float16 {
